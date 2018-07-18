@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>menu chart</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/menupage.js"></script>
+</head>
+
+<body style="background-color:grey">
+ <h2 style="text-align:center;color:red">Fast Food Menu</h2>
+             
+
+
+ <table id="t01">
+    <tr>
+      <th>item no.</th>
+      <th>Dish Name</th>
+      <th>Price</th>
+     </tr>
+     <tr>
+      <td>1</td>
+        <td>Dosa</td>
+        <td id="t1">50</td>
+    </tr>
+           <tr>
+          <td>2</td>
+            <td>Queen dry</td>
+            <td id="t2">100</td>
+             </tr>
+         <tr>
+           <td>3</td>
+            <td>Fries Patato</td>
+            <td id="t3">150</td>
+            </tr>
+           <tr>
+           <td>3</td>
+            <td>Curly Fries</td>
+            <td id="t4">200</td>
+            </tr>
+           <tr>
+               <td>4</td>
+            <td>Frosty Wendy</td>
+            <td id="t5">300</td>
+            </tr>
+          
+          <tr>
+           <td>5</td>
+            <td>Chicken Fries Patato</td>
+            <td id="t6">350</td>
+            </tr>
+         
+  </table>
+
+
+  <form name="formm" onsubmit="return(quq())"  action="place order.html">
+      <label for="dish" >Dish Name:</label>
+    <br />
+       <select id="khana" onchange="price()" name="khana" >
+        <option>Please select this field</option>
+      <option value="Dosa">Dosa</option>
+      <option value="queen dry">Queen dry</option>
+      <option value="fries patato">Fries Patato</option>
+      <option value="curly fries">Curly Fries</option>
+      <option value="frosty wendy">Frosty Wendy</option>
+      <option value="Chicken Fries Patato">Chicken Fries Patato</option>
+      </select>
+      <h3 id="slel"></h3>
+    
+    
+      <label for="quan">Quantity:</label>
+      <input type="number"  id="quantit" onkeyup="quant()" name="qut"/>
+<h3 id="quantt"></h3>
+
+      
+      <label for="price">Price:</label>
+      <input type="text" id="pri" size="40" onchange="price">
+
+      <label for="price">Total amount:</label>
+      <input type="text" id="total" >
+   <input type="submit" value="place order" > 
+</form>
+
+
+
+
+    </body>
+    
+    </html>
+    

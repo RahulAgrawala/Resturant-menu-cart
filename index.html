@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/index.css">
+   <script src="js/index.js"></script>
+</head>
+<body>
+
+<form name="login" autocomplete="off">
+<div class="flex-rectangle">
+<h3 id="error"></h3>
+  User Id:   <input type="text" name="user"  ><br><br><br>
+ Password:  <input type="text" name="pass"><br><br>
+</form>
+    <button onclick=" return check()">Try it</button>
+</div>
+<button class="flex" onclick="tt()" >Sign Up</button>
+
+
+
+
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="#" name="regi" onsubmit="return register()">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" id="em" name="email" onkeyup="register()">
+  <h4 id="emil"></h4>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="pss" onkeyup="register()" name="pass">
+        <h4 id="pass"></h4> 
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="pass2" onkeyup="register()">
+        <h4 id="pass3"></h4>
+      
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+
+
+
+
+</form>
+
+
+</body>
+   </html>
