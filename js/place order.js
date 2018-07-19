@@ -72,7 +72,11 @@ function validate()
          return false
     
 }
-}
+else{
+  alert(" your order successful place");
+  }
+ }
 
    return( true );
+ 
 }
