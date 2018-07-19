@@ -63,7 +63,7 @@ function check(){
     var a=login.user.value;
     var b=login.pass.value;
     
-    if(a==1&& b==1){
+    if(a==rahul&& b==12345){
        window.open("menupage.html");
     
     } else{
